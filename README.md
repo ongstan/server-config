@@ -36,6 +36,8 @@ $ ssh <user>@<server-ip>
 
 服务器开通了SFTP，可进行文件的上传下载操作，未开通ftp，请安装filezilla来进行文件的上传。
 
+![535238B0297F9F6977BADED7AAFF4BC4](/Users/stanwang/Documents/535238B0297F9F6977BADED7AAFF4BC4.jpg)
+
 linux用户请使用scp指令。具体请man
 
 出于安全考虑， 请不要使用root作为用户登录。我设定了两个初始用户
