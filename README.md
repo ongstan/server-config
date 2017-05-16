@@ -2,7 +2,7 @@
 
 :)
 
-# 	服务IP：prefix.14.249（PREFIX代表校园前缀） 
+# 	服务IP:prefix.14.249（PREFIX代表校园前缀） 
 
 ## alternative  
 
