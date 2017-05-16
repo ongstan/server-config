@@ -4,6 +4,10 @@
 
 # 	服务IP：prefix.14.249（PREFIX代表校园前缀） 
 
+## alternative  
+
+## 你也可以使用**go.usping.tw**进入服务器。通常在我发现ip更变之后才会更改域名解析。但大部分时间是没有问题的。 
+
 当出现不抗力因素导致服务器失效并重启时，请使用本repo中的detect.py来查询最新的服务器IP
 
 *Usage*
@@ -12,13 +16,13 @@
 $ python3 detect.py
 ```
 
-detect.py依赖requests，请在使用前使用
+detect.py依赖requests，请在本机使用前使用
 
 ```
 $ pip install requests -i https://pypi.douban.com/simple
 ```
 
-安装这个依赖，否则可能会无法执行
+安装这个依赖，否则操作可能会无法执行
 
 # 如何使用
 
@@ -55,7 +59,7 @@ $ sudo visudo
 
 # UTIL
 
-- SSH secure shell 为远程访问shell，linux中，所有的操作都需要基于shell展开,因此我们
+- SSH secure shell 为远程访问shell，linux中，所有的操作都需要基于shell展开
 
 - $,# $为普通用户和ROOT用户分别在shell中的操作，在代码块中的代码，请去掉$,#来进行输入
 
@@ -86,7 +90,7 @@ $ sudo visudo
   而ubuntu是debian系的操作系统，因此你也可以使用.deb的文件来安装软件
 
   ```
-  $ sudo apt-get install <software-name>.deb
+  $ sudo dpkg -i  <software-name>.deb && sudo apt install -f
   ```
 
 - 当你在教程中看见了gedit这种指令，ssh是无法执行这种指令的。这只是一个编辑器，请将gedit替换成vim或nano。推荐新入linux的用户选择nano
@@ -105,13 +109,19 @@ $ sudo visudo
 
 - 我使用docker搭建了翻墙服务，速度一般，延迟低。斟酌使用
 
-  [访问]: https://github.com/ongstan/S-	"查看"
+  https://github.com/ongstan/S-
 
 - todolist中的软件正在逐步安装
 
+- 我也在服务器上搭建了云盘同步盘的服务。你也可以使用
+
+  http://go.usping.tw:8000 进入云盘查看
+
+  如果需要使用请联系我
+
 # TODOLIST
 
-- nvidia driver
+- ~~nvidia driver~~
 - tensorflow-GPU version
 - caffe
 - cuda,cudnn
