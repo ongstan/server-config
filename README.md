@@ -2,11 +2,9 @@
 
 :)
 
-# 	服务IP:prefix.14.249（PREFIX代表校园前缀） 
+# 	服务IP:prefix.14.65（PREFIX代表校园前缀） 
 
-## alternative  
-
-## 你也可以使用**go.usping.tw**进入服务器。通常在我发现ip更变之后才会更改域名解析。但大部分时间是没有问题的。 
+## no any alternative  
 
 当出现不抗力因素导致服务器失效并重启时，请使用本repo中的detect.py来查询最新的服务器IP
 
@@ -129,3 +127,27 @@ $ sudo visudo
 - cuda,cudnn
 - keras
 - ...
+
+
+
+# SEAFILE Startup
+
+seafile 文件在用户stan目录下
+
+即 /home/stan/,使用stan用户远程登录，密码为我的名字
+
+随后切换目录
+
+`$ cd /home/stan/rhtm/seafile-server-6.1.0 `
+
+清除seafile错误缓存
+
+` $ sudo rm -rf /tmp/seahub_cache -r `
+
+随后按顺序启动
+
+` $ ./home/stan/rhtm/seafile-server-6.1.0/seafile.sh`
+
+`$ ./home/stan/rhtm/seafile-server-6.1.0/seahub.sh `
+
+提示成功即完成
