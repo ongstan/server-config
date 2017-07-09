@@ -2,7 +2,7 @@
 
 :)
 
-# 	服务IP:prefix.14.65（PREFIX代表校园前缀） 
+# 	服务IP:<prefix>.14.65（PREFIX代表校园前缀） 
 
 ## no any alternative  
 
@@ -61,7 +61,7 @@ $ sudo visudo
 
 - SSH secure shell 为远程访问shell，linux中，所有的操作都需要基于shell展开
 
-- $,# $为普通用户和ROOT用户分别在shell中的操作，在代码块中的代码，请去掉$,#来进行输入
+- $,# : $为普通用户和ROOT用户分别在shell中的操作，在代码块中的代码，请去掉$,#来进行输入
 
 - ~代表当前用户目录 echo ~ = /home/<username>
 
@@ -107,15 +107,15 @@ $ sudo visudo
 
 - 部分细节未做描述，遇到我未说明白的请直接咨询我
 
-- 我使用docker搭建了翻墙服务，速度一般，延迟低。斟酌使用
+- 我使用docker搭建了翻墙服务，速度一般，延迟低。斟酌使用，由于日方docker不再免费，所以不再可以使用
 
-  https://github.com/ongstan/S-
+  ~~https://github.com/ongstan/S-~~
 
 - todolist中的软件正在逐步安装
 
 - 我也在服务器上搭建了云盘同步盘的服务。你也可以使用
 
-  http://go.usping.tw:8000 进入云盘查看
+  http://<server-ip>:8000 进入云盘查看
 
   如果需要使用请联系我
 
@@ -136,6 +136,12 @@ seafile 文件在用户stan目录下
 
 即 /home/stan/,使用stan用户远程登录，密码为我的名字
 
+通常情况下，如果服务器的ip地址没有变化，你不用执行这一步操作
+
+` $ nano /home/stan/rhtm/conf/ccnet.conf`
+
+将服务器ip变更为当前服务器ip
+
 随后切换目录
 
 `$ cd /home/stan/rhtm/seafile-server-6.1.0 `
@@ -151,3 +157,4 @@ seafile 文件在用户stan目录下
 `$ ./home/stan/rhtm/seafile-server-6.1.0/seahub.sh `
 
 提示成功即完成
+
